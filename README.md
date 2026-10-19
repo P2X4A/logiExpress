@@ -1,68 +1,34 @@
-﻿# Envios de Paqueteria LogiExpress
+﻿# ðŸšš EnvÃ­os de PaqueterÃ­a LogiExpress
 
-Sistema de una empresa de paqueteria con envios nacionales, de documentos e internacionales.
+Sistema de una empresa de paqueterÃ­a con envÃ­os nacionales, de documentos e internacionales.
 
-## Detalle
+## ðŸ“‹ CaracterÃ­sticas
 
-| | |
-|---|---|
-| Tipo | Consola (MVC) |
-| Archivos Java | 8 |
-| Version de Java | 23 |
-| Patron | Arquitectura MVC con jerarquia de clases de registro de envio |
+- GestiÃ³n de envÃ­os de paqueterÃ­a
+- Tipos de envÃ­o: nacionales, documentos e internacionales
+- Sistema de seguimiento y gestiÃ³n
+- Interfaz por consola
+- Arquitectura MVC
 
-## Funcionalidades
+## ðŸ› ï¸ TecnologÃ­as
 
-- Calculo de peso volumetrico
-- Envios de usuario, documentos e internacionales
-- Calculo de impuestos por pais
-- Listado de envios mayores a 500 USD
-- Generacion de identificadores UUID
+- Java
+- Maven
+- PatrÃ³n MVC
 
-## Estructura del proyecto
-
-```
-logiExpress/
-|-- pom.xml       configuracion de Maven, importable desde cualquier IDE
-|-- src/          codigo fuente
-`-- README.md
-```
-
-## Como ejecutarlo
-
-### Con Maven
+## ðŸš€ CÃ³mo ejecutar
 
 ```bash
+git clone https://github.com/P2X4A/logiExpress.git
+cd logiExpress
 mvn clean compile
-mvn exec:java
+mvn exec:java -Dexec.mainClass="AplMain"
 ```
 
-### Con javac directamente
+## ðŸ‘¨â€ðŸ’» Autor
 
-```bash
-# Linux / macOS
-javac -d bin $(find src -name "*.java")
+Sergio Parra
 
-# Windows (PowerShell)
-javac -d bin (Get-ChildItem -Recurse -Filter *.java src).FullName
-```
+---
 
-```bash
-java -cp bin co.edu.unbosque.controller.AplMain
-```
-
-### Desde un IDE
-
-Cualquier IDE con soporte de Java (Eclipse, IntelliJ IDEA, VS Code o NetBeans)
-puede importar el proyecto directamente como **proyecto Maven**. Basta con abrir
-o importar la carpeta: el IDE detecta el `pom.xml`, resuelve las dependencias y
-compila sin configuracion adicional.
-
-## Autor
-
-Desarrollado por [Sergio Parra](https://github.com/P2X4A) como parte de su
-formacion en Java.
-
-## Licencia
-
-Ver el archivo [LICENSE](LICENSE).
+*Proyecto acadÃ©mico para portafolio.*
